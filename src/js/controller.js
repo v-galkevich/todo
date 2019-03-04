@@ -59,6 +59,9 @@ export default class Controller {
         for( let i = 0; i < len; i++ ) {
             if ( items[i].status === true ) {
                 this.view.setVisibility(true);
+                break;
+            } else {
+                this.view.setVisibility(false);
             }
         }
     }
